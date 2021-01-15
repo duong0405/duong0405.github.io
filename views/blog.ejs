@@ -1,6 +1,16 @@
 <%- include('partials/header'); -%>
+
     <h1>My Blog Post</h1>
     <p>
         <%= blogContent %>
     </p>
-    <%- include('partials/footer'); -%>
+
+    <% posts.forEach((post) => { %>
+        <h1><%= post.title %> </h1>
+        <p>
+            <%= post.content.substring(0, 100) + " ..." %>
+            <a href="/blog/<%= post.title %> ">Read More</a>
+        </p> 
+    <% }) %> 
+
+<%- include('partials/footer'); -%>
