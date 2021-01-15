@@ -11,3 +11,29 @@
 .navbar-nav li a:hover {
     color: #ffbc00 !important;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-padding {
+    padding-bottom: 60px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    height: 5rem;
+    color: #fff;
+}
