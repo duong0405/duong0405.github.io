@@ -1,7 +1,10 @@
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
 }
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -11,25 +14,213 @@
     font-size: 12px;
     letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
+
+.navbar-nav li a:hover {
     color: #1abc9c !important;
 }
 
-.footer-padding {
-	padding-bottom: 60px;
+.btn-main,
+.btn-light,
+.btn-dark {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
 }
 
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
+.btn-main {
+    color: #333;
+    background-color: #ffbc00;
 }
 
-.footer p {
-	margin-top: 25px;
-	font-size: 12px;
-  color: #fff;
+.btn-light {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.btn-dark {
+    color: #f4f4f4;
+    background-color: #333;
+}
+
+.bg-main {
+    background: #ffbc00;
+    color: #fff;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #000;
+}
+
+.bg-medium {
+    background: #ccc;
+    color: #000;
+}
+
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: #ffbc00;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.py-4 {
+    padding: 4rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: #ffbc00;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+#contact .text-fields {
+    display: grid;
+    grid-template-areas: 'name email''subject phone''message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#contact .text-fields .name-input {
+    grid-area: name;
+}
+
+#contact .text-fields .subject-input {
+    grid-area: subject;
+}
+
+#contact .text-fields .email-input {
+    grid-area: email;
+}
+
+#contact .text-fields .phone-input {
+    grid-area: phone;
+}
+
+#contact .text-fields .message-input {
+    grid-area: message;
+    height: 100px;
+}
+
+#contact .text-fields .text-input {
+    padding: 0.5rem 1rem;
+}
+
+#contact button[type='submit'] {
+    width: 50%;
+}
+
+#main-footer {
+    background: #333;
+    color: #fff;
+    height: 5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+#main-footer .footer-content .social .fab {
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#main-footer .footer-content .social .fab:hover {
+    background: #ffbc00;
 }
