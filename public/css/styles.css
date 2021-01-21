@@ -174,3 +174,33 @@ h1 {
     font-weight: 600;
     letter-spacing: .3px;
 }
+
+#about {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+#about .container-fluid {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+#about .about-info {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+#about .text {
+    border-left: 3px solid #ffbc00;
+    padding: 0.8rem;
+}
+
+#about .image {
+    width: 100%;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
