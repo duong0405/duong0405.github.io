@@ -328,6 +328,7 @@ h4 {
 #contact .container-fluid {
     padding-left: 15rem;
     padding-right: 15rem;
+    padding-bottom: 10rem;
 }
 
 #contact .lead {
@@ -345,4 +346,11 @@ h4 {
 
 #contact .social .fa {
     color: #000;
+}
+
+#footer {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: #000;
+    color: #fff;
 }
