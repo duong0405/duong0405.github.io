@@ -10,6 +10,15 @@ h1 {
     font-weight: 900;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #0044FF;
+    text-decoration: none;
+}
+
 .navbar-custom {
     background-color: #000;
     position: fixed;
@@ -312,6 +321,11 @@ h4 {
     font-size: 2rem;
     padding: 0 1rem;
     margin: 5px 0 0 0;
+}
+
+.item-text-read-more {
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
 }
 
 .item-text-category {
