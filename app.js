@@ -22,6 +22,26 @@ app.get("/", (req, res) => {
   res.render("home", { startingContent: homeStartingContent });
 });
 
+app.get("/about", (req, res) => {
+  res.render("about", { aboutContent: aboutContent });
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact", { contactContent: contactContent });
+});
+
+app.get("/compose", (req, res) => {
+  res.render("compose");
+});
+
+app.get("/blog", (req, res) => {
+  res.render("blog", { blogContent: homeStartingContent });
+});
+
+app.post("/compose", (req, res) => {
+  console.log(req.body.postTitle);
+});
+
 app.listen(3000, function () {
   console.log("Server started on port 3000");
 });
